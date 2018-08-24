@@ -1,0 +1,17 @@
+.card {
+    
+    background: #00B4DB; 
+    background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);  
+    background: linear-gradient(to bottom , #0083B0, #00B4DB); 
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.uppercase {
+    text-transform: capitalize;
+}
+
+
+
+
+

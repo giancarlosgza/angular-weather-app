@@ -1,0 +1,48 @@
+<nav class="transparent z-depth-0">
+  <div class="nav-wrapper">
+    <div class="container">
+      <a routerLink="/home" class="brand-logo">
+        Clima
+        <i class="large material-icons right">wb_sunny</i>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a routerLink="/home">
+            <i class="fas fa-home fa-1x"></i>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/setting">
+            <i class="fas fa-map-marker-alt fa-1x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li>
+    <a routerLink="/home">Inicio
+      <i class="fas fa-home fa-1x"></i>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/setting">Configuración
+      <i class="fas fa-map-marker-alt fa-1x"></i>
+    </a>
+  </li>
+</ul>
+
+<br>
+<div class="container-fluid">
+  
+  <!--
+  <a href="/home" class="btn btn-primary">Home</a>
+  <a href="/setting" class="btn btn-info">Setting</a>
+  -->
+  <router-outlet></router-outlet>
+</div>

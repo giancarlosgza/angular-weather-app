@@ -1,0 +1,62 @@
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+
+        <div class="card">
+          <div class="row">
+
+            <div class="col s12 m7 left-align">
+              <div class="card-content white-text">
+                <br>
+                <h4 style="font-family: Raleway, sans-serif">{{weather.name}}</h4>
+                <h6 style="font-family: Montserrat, sans-serif">{{today | date:'longDate'}}</h6>
+                <h6 style="font-family: Montserrat, sans-serif">{{today | date:'shortTime'}}</h6>
+
+                <!--<h6>{{weather.sys.country}}</h6>-->
+                <!--<h6>{{weather.coord.lat}}, {{weather.coord.lon}}</h6>-->
+                <!--<h6>{{weather.weather[0].icon}}</h6>-->
+
+                <!--<img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" alt="icon" width="50px">-->
+                
+                <i class="owf owf-{{weather.weather[0].id}} owf-5x" alt="icon"></i>
+                <h5 class="uppercase" style="font-family: Raleway, sans-serif">{{weather.weather[0].description}}</h5>
+                <!--<h6>{{weather.weather[0].description}}</h6>-->
+              </div>
+            </div>
+
+            <div class="col s12 m5 center-align">
+              <div class="card-content white-text">
+                <h1 style="font-family: Montserrat, sans-serif">{{weather.main.temp}}°</h1>
+                <h5 style="font-family: Montserrat, sans-serif">{{weather.main.temp_max}}°/ {{weather.main.temp_min}}°</h5>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-action white-text">
+            <h5>Hoy</h5>
+            <table class="highlight">
+              <thead>
+                <tr>
+                  <th>Humedad</th>
+                  <th>Presión</th>
+                  <th>Velocidad del Viento</th>
+                  <th>Visibilidad</th>
+                </tr>
+              </thead>
+            
+              <tbody>
+                <tr>
+                  <td>{{weather.main.humidity}} %</td>
+                  <td>{{weather.main.pressure}} mb</td>
+                  <td>{{weather.wind.speed}} km/h</td>
+                  <td>{{weather.visibility}} km</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <br>
+</div>

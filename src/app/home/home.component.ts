@@ -7,6 +7,7 @@ import { WeatherService } from '../weather.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
 
   location={
@@ -15,6 +16,7 @@ export class HomeComponent implements OnInit {
   };
 
   weather:any;
+  weatherForecast:any;
   value:any;
 
   constructor(private _weatherService:WeatherService) { }
@@ -37,6 +39,11 @@ export class HomeComponent implements OnInit {
     this._weatherService.getWeather(this.location.city, this.location.code).subscribe((response)=>{
       console.log(response);
       this.weather=response;
+    });
+
+    this._weatherService.getWeatherForecast(this.location.city, this.location.code).subscribe((response) => {
+      console.log(response);
+      this.weatherForecast=response;
     });
   }
 

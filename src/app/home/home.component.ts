@@ -46,5 +46,5 @@ export class HomeComponent implements OnInit {
       this.weatherForecast=response;
     });
   }
-
+  
 }

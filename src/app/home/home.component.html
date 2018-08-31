@@ -6,9 +6,8 @@
 
             <div class="col s12 m7 left-align">
               <div class="card-content white-text animated zoomIn">
-                <br>
               
-                <h4 style="font-family: Raleway, sans-serif">{{weather.name}}</h4>
+                <h4 style="font-family: Raleway, sans-serif">{{weather.name}}</h4><br>
                 <h6 class="longDate" style="font-family: Montserrat, sans-serif">{{today | date:'longDate'}}</h6>
                 <h6 class="shortTime" style="font-family: Montserrat, sans-serif">{{today | date:'shortTime'}}</h6>
 
@@ -81,11 +80,11 @@
             
               <tbody>
                 <tr>
-                  <td>{{weatherForecast.list[4].main.temp_max}} / {{weatherForecast.list[4].main.temp_min}}</td>
-                  <td>{{weatherForecast.list[12].main.temp_max}} / {{weatherForecast.list[12].main.temp_min}}</td>
-                  <td>{{weatherForecast.list[20].main.temp_max}} / {{weatherForecast.list[20].main.temp_min}}</td>
-                  <td>{{weatherForecast.list[28].main.temp_max}} / {{weatherForecast.list[28].main.temp_min}}</td>
-                  <td>{{weatherForecast.list[36].main.temp_max}} / {{weatherForecast.list[36].main.temp_min}}</td>
+                  <td>{{weatherForecast.list[4].main.temp}}°</td>
+                  <td>{{weatherForecast.list[12].main.temp_max}}°</td>
+                  <td>{{weatherForecast.list[20].main.temp_max}}°</td>
+                  <td>{{weatherForecast.list[28].main.temp_max}}°</td>
+                  <td>{{weatherForecast.list[36].main.temp_max}}°</td>
                 </tr>
               </tbody>
             </table><br>

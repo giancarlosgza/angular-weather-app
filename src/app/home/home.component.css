@@ -1,0 +1,125 @@
+.card {
+    /*
+    background: #00B4DB; 
+    background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB);  
+    background: linear-gradient(to bottom , #0083B0, #00B4DB); 
+    */
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-0, .card-1, .card-2, .card-3, .card-4, .card-5  {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background: #355C7D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-6, .card-7  {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background: #FF512F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.card-8, .card-9, .card-10, .card-11, .card-12  {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-13, .card-14, .card-15, .card-16, .card-17 {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-18, .card-19  {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background: #0B486B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-20, .card-21, .card-22, .card-23, .card-24  {
+    font-family: 'Roboto', sans-serif;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    padding: 24px;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-content h1 {
+      font-size: 80px;
+  }
+
+.uppercase {
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-content {
+      text-align: center;
+      padding-top: 0px;
+      padding-bottom: 0px;
+  }
+
+  .card-content h4 {
+      font-size: 25px;
+      font-weight: 700;
+  }
+
+  .card-content h1 {
+      font-size: 80px;
+  }
+
+  .shortTime, .longDate {
+    display: none;
+  }
+
+  .owf-5x {
+      font-size: 100px;
+  }
+
+}
+
+
+

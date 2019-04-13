@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+      <div class="card">
+        <div class="card-content">
+          <h5>Enter a city and the country code</h5>
+          <br>
+          <form>
+            <div class="form-group">
+              <label>City</label>
+              <input type="text" name="city" class="form-control" [(ngModel)]="city">
+          
+              <label>Country Code</label>
+              <input type="text" name="code" class="form-control" [(ngModel)]="code">
+            </div>
+            <br>
+            <button class="btn btn-primary" (click)="save()">Save Changes</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>

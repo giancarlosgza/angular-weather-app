@@ -1,0 +1,97 @@
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+        <div class="card-{{today | date:'H'}}">
+          <div class="row">
+
+            <div class="col s12 m7 left-align">
+              <div class="card-content white-text animated zoomIn">
+              
+                <h4 style="font-family: Raleway, sans-serif">{{weather.name}}</h4><br>
+                <h6 class="longDate" style="font-family: Montserrat, sans-serif">{{today | date:'longDate'}}</h6>
+                <h6 class="shortTime" style="font-family: Montserrat, sans-serif">{{today | date:'shortTime'}}</h6>
+
+                <!--<h6>{{weather.sys.country}}</h6>-->
+                <!--<h6>{{weather.coord.lat}}, {{weather.coord.lon}}</h6>-->
+                <!--<h6>{{weather.weather[0].icon}}</h6>-->
+
+                <!--<img src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" alt="icon" width="50px">-->
+                
+                <i class="owf owf-{{weather.weather[0].id}} owf-5x" alt="icon"></i>
+                <h5 class="uppercase" style="font-family: Raleway, sans-serif">{{weather.weather[0].description}}</h5>
+                <!--<h6>{{weather.weather[0].description}}</h6>-->
+              </div>
+            </div>
+
+            <div class="col s12 m5 center-align">
+              <div class="card-content white-text  animated zoomIn">
+                <h1 style="font-family: Montserrat, sans-serif">{{weather.main.temp}}°</h1>
+                <h5 style="font-family: Montserrat, sans-serif">{{weather.main.temp_max}}° / {{weather.main.temp_min}}°</h5>
+              </div>
+            </div>
+          </div><br>
+          
+          <div class="card-action white-text animated fadeInUp">
+            <h5>{{today | date:'EEEE'}} | <strong>TODAY</strong></h5>
+            <table class="highlight">
+              <thead>
+                <tr>
+                  <th>Humity</th>
+                  <th>Pressure</th>
+                  <th>Wind Speed</th>
+                  <th>Visibility</th>
+                </tr>
+              </thead>
+            
+              <tbody>
+                <tr>
+                  <td>{{weather.main.humidity}} %</td>
+                  <td>{{weather.main.pressure}} mb</td>
+                  <td>{{weather.wind.speed}} km/h</td>
+                  <td>{{weather.visibility}} km</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+            <hr>
+            <br>
+
+            <table class="responsive-table">
+              <thead>
+                <tr>
+                  <th>{{weatherForecast.list[4].dt_txt | date:'EEEE'}}
+                    <i class="owf owf-{{weatherForecast.list[4].weather[0].id}} owf-1x" alt="icon"></i>
+                  </th>
+                  <th>{{weatherForecast.list[12].dt_txt | date:'EEEE'}}
+                    <i class="owf owf-{{weatherForecast.list[12].weather[0].id}} owf-1x" alt="icon"></i>
+                  </th>
+                  <th>{{weatherForecast.list[20].dt_txt | date:'EEEE'}}
+                    <i class="owf owf-{{weatherForecast.list[20].weather[0].id}} owf-1x" alt="icon"></i>
+                  </th>
+                  <th>{{weatherForecast.list[28].dt_txt | date:'EEEE'}}
+                    <i class="owf owf-{{weatherForecast.list[28].weather[0].id}} owf-1x" alt="icon"></i>
+                  </th>
+                  <th>{{weatherForecast.list[36].dt_txt | date:'EEEE'}}
+                    <i class="owf owf-{{weatherForecast.list[36].weather[0].id}} owf-1x" alt="icon"></i>
+                  </th>
+                </tr>
+              </thead>
+            
+              <tbody>
+                <tr>
+                  <td>{{weatherForecast.list[4].main.temp}}°</td>
+                  <td>{{weatherForecast.list[12].main.temp_max}}°</td>
+                  <td>{{weatherForecast.list[20].main.temp_max}}°</td>
+                  <td>{{weatherForecast.list[28].main.temp_max}}°</td>
+                  <td>{{weatherForecast.list[36].main.temp_max}}°</td>
+                </tr>
+              </tbody>
+            </table><br>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <br>
+</div>
